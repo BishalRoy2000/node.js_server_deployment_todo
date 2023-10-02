@@ -29,3 +29,7 @@ app.use("/api/v1/tasks",taskroutes);
 // kintu ami jokhon e kono handler er modhe next() call kore tar modhe error argument pass korbo... tokhon e sob bondho kore ai error middle ware ta chalabe...
 
 app.use(errorMiddleware); // akhane middle ware ta use korlam.....jeta middleware folder a baniyechi.....
+
+app.get("/",(req,res)=>{
+    res.send("nice work");
+})
